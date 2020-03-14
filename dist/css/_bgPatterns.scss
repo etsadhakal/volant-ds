@@ -1,0 +1,241 @@
+//background colors & shades pattern
+//-----------------------------------
+//primary light
+.bg-primary-ternary {
+    background: lighten($primary, 40%);
+}
+
+.bg-primary-100 {
+    background: lighten($primary, 35%);
+}
+
+.bg-primary-200 {
+    background: lighten($primary, 25%);
+}
+
+.bg-primary-300 {
+    background: lighten($primary, 10%);
+}
+
+.bg-primary-400 {
+    background: lighten($primary, 5%);
+}
+
+//primary
+.bg-primary-500 {
+    background: $primary;
+}
+
+//primary dark
+.bg-primary-600 {
+    background: darken($primary, 5%);
+}
+
+.bg-primary-700 {
+    background: darken($primary, 10%);
+}
+
+.bg-primary-800 {
+    background: darken($primary, 25%);
+}
+
+//-----------------------------------
+
+//gray light
+.bg-gray-ternary {
+    background: lighten($gray, 40%);
+}
+
+.bg-gray-100 {
+    background: lighten($gray, 35%);
+}
+
+.bg-gray-200 {
+    background: lighten($gray, 25%);
+}
+
+.bg-gray-300 {
+    background: lighten($gray, 10%);
+}
+
+.bg-gray-400 {
+    background: lighten($gray, 5%);
+}
+
+//gray
+.bg-gray-500 {
+    background: $gray;
+}
+
+//gray dark
+.bg-gray-600 {
+    background: darken($gray, 5%);
+}
+
+.bg-gray-700 {
+    background: darken($gray, 10%);
+}
+
+.bg-gray-800 {
+    background: darken($gray, 35%);
+}
+
+//-----------------------------------
+
+//info light
+.bg-info-ternary {
+    background: lighten($info, 40%);
+}
+
+.bg-info-100 {
+    background: lighten($info, 35%);
+}
+
+.bg-info-200 {
+    background: lighten($info, 25%);
+}
+
+.bg-info-300 {
+    background: lighten($info, 10%);
+}
+
+.bg-info-400 {
+    background: lighten($info, 5%);
+}
+
+//info
+.bg-info-500 {
+    background: $info;
+}
+
+//info dark
+.bg-info-600 {
+    background: darken($info, 5%);
+}
+
+.bg-info-700 {
+    background: darken($info, 10%);
+}
+
+.bg-info-800 {
+    background: darken($info, 35%);
+}
+
+//-----------------------------------
+
+//warning light
+.bg-warning-ternary {
+    background: lighten($warning, 40%);
+}
+
+.bg-warning-100 {
+    background: lighten($warning, 35%);
+}
+
+.bg-warning-200 {
+    background: lighten($warning, 25%);
+}
+
+.bg-warning-300 {
+    background: lighten($warning, 10%);
+}
+
+.bg-warning-400 {
+    background: lighten($warning, 5%);
+}
+
+//warning
+.bg-warning-500 {
+    background: $warning;
+}
+
+//warning dark
+.bg-warning-600 {
+    background: darken($warning, 5%);
+}
+
+.bg-warning-700 {
+    background: darken($warning, 10%);
+}
+
+.bg-warning-800 {
+    background: darken($warning, 35%);
+}
+
+//-----------------------------------
+
+//error light
+.bg-error-ternary {
+    background: lighten($error, 40%);
+}
+
+.bg-error-100 {
+    background: lighten($error, 35%);
+}
+
+.bg-error-200 {
+    background: lighten($error, 25%);
+}
+
+.bg-error-300 {
+    background: lighten($error, 10%);
+}
+
+.bg-error-400 {
+    background: lighten($error, 5%);
+}
+
+//error
+.bg-error-500 {
+    background: $error;
+}
+
+//error dark
+.bg-error-600 {
+    background: darken($error, 5%);
+}
+
+.bg-error-700 {
+    background: darken($error, 10%);
+}
+
+.bg-error-800 {
+    background: darken($error, 35%);
+}
+
+//-----------------------------------
+
+//black light
+.bg-black-100 {
+    background: lighten($black, 35%);
+}
+
+.bg-black-200 {
+    background: lighten($black, 25%);
+}
+
+.bg-black-300 {
+    background: lighten($black, 10%);
+}
+
+.bg-black-400 {
+    background: lighten($black, 5%);
+}
+
+//black
+.bg-black-500 {
+    background: $black;
+}
+
+//black dark
+.bg-black-600 {
+    background: darken($black, 5%);
+}
+
+.bg-black-700 {
+    background: darken($black, 10%);
+}
+
+.bg-black-800 {
+    background: darken($black, 35%);
+}
