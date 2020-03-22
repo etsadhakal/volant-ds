@@ -1,12 +1,14 @@
-@import "./elements/bgPatterns";
-
 // styles of constant design
 * {
     margin: 0, 0;
     padding: 0, 0;
 }
 
-html {
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: $fontFamilyStyle;
+    font-size: $baseFontSize;
+    font-weight: $baseFontWeight;
 }

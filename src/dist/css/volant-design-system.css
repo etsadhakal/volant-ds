@@ -1,0 +1,450 @@
+* {
+  margin: 0, 0;
+  padding: 0, 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.bg-primary-ternary {
+  background: #c8eeec;
+}
+
+.bg-primary-100 {
+  background: #b5e8e5;
+}
+
+.bg-primary-200 {
+  background: #8edbd8;
+}
+
+.bg-primary-300 {
+  background: #54c9c3;
+}
+
+.bg-primary-400 {
+  background: #40c3bd;
+}
+
+.bg-primary-500 {
+  background: #38b2ac;
+}
+
+.bg-primary-600 {
+  background: #329f99;
+}
+
+.bg-primary-700 {
+  background: #2c8b87;
+}
+
+.bg-primary-800 {
+  background: #19514e;
+}
+
+.bg-gray-ternary {
+  background: white;
+}
+
+.bg-gray-100 {
+  background: white;
+}
+
+.bg-gray-200 {
+  background: #edeff3;
+}
+
+.bg-gray-300 {
+  background: #bfc8d4;
+}
+
+.bg-gray-400 {
+  background: #afbbca;
+}
+
+.bg-gray-500 {
+  background: #A0AEC0;
+}
+
+.bg-gray-600 {
+  background: #91a1b6;
+}
+
+.bg-gray-700 {
+  background: #8194ac;
+}
+
+.bg-gray-800 {
+  background: #455568;
+}
+
+.bg-info-ternary {
+  background: #f2f8fd;
+}
+
+.bg-info-100 {
+  background: #dcecf9;
+}
+
+.bg-info-200 {
+  background: #b0d4f2;
+}
+
+.bg-info-300 {
+  background: #6eb1e8;
+}
+
+.bg-info-400 {
+  background: #58a5e4;
+}
+
+.bg-info-500 {
+  background: #4299E1;
+}
+
+.bg-info-600 {
+  background: #2c8dde;
+}
+
+.bg-info-700 {
+  background: #2180cf;
+}
+
+.bg-info-800 {
+  background: #0f3c61;
+}
+
+.bg-warning-ternary {
+  background: #fef7f1;
+}
+
+.bg-warning-100 {
+  background: #fce9da;
+}
+
+.bg-warning-200 {
+  background: #f7ceab;
+}
+
+.bg-warning-300 {
+  background: #f1a465;
+}
+
+.bg-warning-400 {
+  background: #ef974d;
+}
+
+.bg-warning-500 {
+  background: #ED8936;
+}
+
+.bg-warning-600 {
+  background: #eb7b1f;
+}
+
+.bg-warning-700 {
+  background: #dc6f14;
+}
+
+.bg-warning-800 {
+  background: #673409;
+}
+
+.bg-error-ternary {
+  background: #ffad99;
+}
+
+.bg-error-100 {
+  background: #ff9980;
+}
+
+.bg-error-200 {
+  background: #ff704d;
+}
+
+.bg-error-300 {
+  background: #ff3200;
+}
+
+.bg-error-400 {
+  background: #e62d00;
+}
+
+.bg-error-500 {
+  background: #CC2800;
+}
+
+.bg-error-600 {
+  background: #b32300;
+}
+
+.bg-error-700 {
+  background: #991e00;
+}
+
+.bg-error-800 {
+  background: #1a0500;
+}
+
+.bg-black-100 {
+  background: #8c8c8c;
+}
+
+.bg-black-200 {
+  background: #737373;
+}
+
+.bg-black-300 {
+  background: #4d4d4d;
+}
+
+.bg-black-400 {
+  background: #404040;
+}
+
+.bg-black-500 {
+  background: #333333;
+}
+
+.bg-black-600 {
+  background: #262626;
+}
+
+.bg-black-700 {
+  background: #1a1a1a;
+}
+
+.bg-black-800 {
+  background: black;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  color: #333333;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.lineHeight-120 {
+  line-height: 1.2;
+}
+
+.lineHeight-130 {
+  line-height: 1.3;
+}
+
+.lineHeight-140, p {
+  line-height: 1.4;
+}
+
+.lineHeight-150, h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  line-height: 1.5;
+}
+
+.lineHeight-160 {
+  line-height: 1.6;
+}
+
+.font-100, .light-font--100 {
+  font-weight: 100;
+}
+
+.font-200, .light-font--200 {
+  font-weight: 200;
+}
+
+.font-200, .light-font--200 {
+  font-weight: 200;
+}
+
+.font-300, .light-font {
+  font-weight: 300;
+}
+
+.font-400, p {
+  font-weight: 400;
+}
+
+.font-500, .bold-font {
+  font-weight: 500;
+}
+
+.font-600, .bold-font--600 {
+  font-weight: 600;
+}
+
+.font-700, .bold-font--700, h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-weight: 700;
+}
+
+.text-gray {
+  color: #A0AEC0;
+}
+
+.text-gray--400 {
+  color: #afbbca;
+}
+
+.text-gray--300 {
+  color: #bfc8d4;
+}
+
+.text-gray--200 {
+  color: #edeff3;
+}
+
+.text-gray--600 {
+  color: #91a1b6;
+}
+
+.text-gray--700 {
+  color: #8194ac;
+}
+
+.text-primary {
+  color: #38b2ac;
+}
+
+.text-primary--400 {
+  color: #40c3bd;
+}
+
+.text-primary--300 {
+  color: #54c9c3;
+}
+
+.text-primary--200 {
+  color: #8edbd8;
+}
+
+.text-primary--600 {
+  color: #329f99;
+}
+
+.text-primary--700 {
+  color: #2c8b87;
+}
+
+.text-warning {
+  color: #ED8936;
+}
+
+.text-warning--400 {
+  color: #ef974d;
+}
+
+.text-warning--300 {
+  color: #f1a465;
+}
+
+.text-warning--200 {
+  color: #f7ceab;
+}
+
+.text-warning--600 {
+  color: #eb7b1f;
+}
+
+.text-warning--700 {
+  color: #dc6f14;
+}
+
+.text-info {
+  color: #4299E1;
+}
+
+.text-info--400 {
+  color: #58a5e4;
+}
+
+.text-info--300 {
+  color: #6eb1e8;
+}
+
+.text-info--200 {
+  color: #b0d4f2;
+}
+
+.text-info--600 {
+  color: #2c8dde;
+}
+
+.text-info--700 {
+  color: #2180cf;
+}
+
+.text-error {
+  color: #CC2800;
+}
+
+.text-error--400 {
+  color: #e62d00;
+}
+
+.text-error--300 {
+  color: #ff3200;
+}
+
+.text-error--200 {
+  color: #ff704d;
+}
+
+.text-error--600 {
+  color: #b32300;
+}
+
+.text-error--700 {
+  color: #991e00;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=volant-design-system.css.map */

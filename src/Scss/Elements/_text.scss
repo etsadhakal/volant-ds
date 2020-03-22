@@ -1,0 +1,269 @@
+//Text Global Declaration
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+    color: $textColor;
+    margin: 0;
+    vertical-align: middle;
+}
+
+//text-line-height
+.lineHeight-120 {
+    line-height: 1.2;
+}
+
+.lineHeight-130 {
+    line-height: 1.3;
+}
+
+.lineHeight-140 {
+    line-height: 1.4;
+}
+
+.lineHeight-150 {
+    line-height: 1.5;
+}
+
+.lineHeight-160 {
+    line-height: 1.6;
+}
+
+//font-weights
+.font-100 {
+    font-weight: 100;
+}
+
+.font-200 {
+    font-weight: 200;
+}
+
+.font-200 {
+    font-weight: 200;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+//light-fonts
+.light-font {
+    @extend.font-300;
+
+    &--100 {
+        @extend.font-100;
+    }
+
+    &--200 {
+        @extend.font-200;
+    }
+}
+
+//bold-fonts
+.bold-font {
+    @extend.font-500;
+
+    &--600 {
+        @extend.font-600;
+    }
+
+    &--700 {
+        @extend.font-700;
+    }
+}
+
+//text-Color
+.text-gray {
+    color: $gray;
+
+    //lighten text colors
+    &--400 {
+        color: lighten($gray, 5%);
+    }
+
+    &--300 {
+        color: lighten($gray, 10%);
+    }
+
+    &--200 {
+        color: lighten($gray, 25%);
+    }
+
+    //darken text colors
+    &--600 {
+        color: darken($gray, 5%);
+    }
+
+    &--700 {
+        color: darken($gray, 10%);
+    }
+}
+
+.text-primary {
+    color: $primary;
+
+    //lighten text colors
+    &--400 {
+        color: lighten($primary, 5%);
+    }
+
+    &--300 {
+        color: lighten($primary, 10%);
+    }
+
+    &--200 {
+        color: lighten($primary, 25%);
+    }
+
+    //darken text colors
+    &--600 {
+        color: darken($primary, 5%);
+    }
+
+    &--700 {
+        color: darken($primary, 10%);
+    }
+}
+
+
+.text-warning {
+    color: $warning;
+
+    //lighten text colors
+    &--400 {
+        color: lighten($warning, 5%);
+    }
+
+    &--300 {
+        color: lighten($warning, 10%);
+    }
+
+    &--200 {
+        color: lighten($warning, 25%);
+    }
+
+    //darken text colors
+    &--600 {
+        color: darken($warning, 5%);
+    }
+
+    &--700 {
+        color: darken($warning, 10%);
+    }
+}
+
+.text-info {
+    color: $info;
+
+    //lighten text colors
+    &--400 {
+        color: lighten($info, 5%);
+    }
+
+    &--300 {
+        color: lighten($info, 10%);
+    }
+
+    &--200 {
+        color: lighten($info, 25%);
+    }
+
+    //darken text colors
+    &--600 {
+        color: darken($info, 5%);
+    }
+
+    &--700 {
+        color: darken($info, 10%);
+    }
+}
+
+.text-error {
+    color: $error;
+
+    //lighten text colors
+    &--400 {
+        color: lighten($error, 5%);
+    }
+
+    &--300 {
+        color: lighten($error, 10%);
+    }
+
+    &--200 {
+        color: lighten($error, 25%);
+    }
+
+    //darken text colors
+    &--600 {
+        color: darken($error, 5%);
+    }
+
+    &--700 {
+        color: darken($error, 10%);
+    }
+}
+
+//Elements Styles
+
+// - paragraph style
+p {
+    font-size: $baseFontSize;
+    @extend .font-400;
+    @extend .lineHeight-140;
+}
+
+// - heading styles
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+    @extend .font-700;
+    @extend .lineHeight-150;
+}
+
+h6 {
+    font-size: $baseFontSize;
+}
+
+h5 {
+    font-size: $baseFontSize + .25rem;
+}
+
+h4 {
+    font-size: $baseFontSize + .5rem;
+}
+
+h3 {
+    font-size: $baseFontSize + .75rem;
+}
+
+h2 {
+    font-size: $baseFontSize + 1rem;
+}
+
+h1 {
+    font-size: $baseFontSize + 1.5rem;
+}
