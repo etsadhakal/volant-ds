@@ -9,7 +9,6 @@ h6 {
     display: block;
     color: $textColor;
     margin: 0;
-    vertical-align: middle;
 }
 
 //text-line-height
@@ -93,6 +92,10 @@ h6 {
 }
 
 //text-Color
+.text-white {
+    color: $white;
+}
+
 .text-gray {
     color: $gray;
 
@@ -266,4 +269,30 @@ h2 {
 
 h1 {
     font-size: $baseFontSize + 1.5rem;
+}
+
+//text-decoration
+.decoration-none {
+    text-decoration: none;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+//text-transform
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-none {
+    text-transform: none;
 }

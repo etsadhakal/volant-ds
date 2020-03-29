@@ -1,4 +1,6 @@
 // styles of constant design
+@import '../Scss/Elements/bgPatterns';
+
 * {
     margin: 0, 0;
     padding: 0, 0;
@@ -11,4 +13,5 @@ body {
     font-family: $fontFamilyStyle;
     font-size: $baseFontSize;
     font-weight: $baseFontWeight;
+    @extend .bg-gray-ternary;
 }

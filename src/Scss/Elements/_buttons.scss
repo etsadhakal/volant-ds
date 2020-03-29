@@ -1,0 +1,140 @@
+.vds-btn {
+    outline: 0;
+    @extend .decoration-none;
+    font-size: $baseFontSize;
+    display: inline-block;
+    padding: 13px 22px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    @extend .text-capitalize;
+
+
+    &--small {
+        @extend .vds-btn;
+        padding: 8px 15px;
+        font-size: $baseFontSize - .15rem;
+    }
+
+    &--large {
+        @extend .vds-btn;
+        padding: 16px 33px;
+        font-size: $baseFontSize + .15rem;
+    }
+
+    &--Xlarge {
+        @extend .vds-btn;
+        padding: 20px 35px;
+        font-size: $baseFontSize + .5rem;
+    }
+
+    &:hover {
+        transition: ease-in-out 0.6s;
+    }
+
+
+}
+
+.btn-primary {
+    @extend .bg-primary-500;
+    @extend .text-white;
+
+    &:hover,
+    &:focus {
+        @extend .bg-primary-700;
+    }
+
+    &--outlined {
+        background: none;
+        border: 1px solid $primary;
+        @extend .text-primary;
+
+        &:hover,
+        &:focus {
+            @extend .btn-primary;
+        }
+    }
+}
+
+.btn-info {
+    @extend .bg-info-500;
+    @extend .text-white;
+
+    &:hover,
+    &:focus {
+        @extend .bg-info-700;
+    }
+
+    &--outlined {
+        background: none;
+        border: 1px solid $info;
+        @extend .text-info;
+
+        &:hover,
+        &:focus {
+            @extend .btn-info;
+        }
+    }
+}
+
+.btn-warning {
+    @extend .bg-warning-500;
+    @extend .text-white;
+
+    &:hover,
+    &:focus {
+        @extend .bg-warning-700;
+    }
+
+    &--outlined {
+        background: none;
+        border: 1px solid $warning;
+        @extend .text-warning;
+
+        &:hover,
+        &:focus {
+            @extend .btn-warning;
+        }
+    }
+}
+
+.btn-gray {
+    @extend .bg-gray-500;
+    @extend .text-white;
+
+    &:hover,
+    &:focus {
+        @extend .bg-gray-700;
+    }
+
+    &--outlined {
+        background: none;
+        border: 1px solid $gray;
+        @extend .text-gray;
+
+        &:hover,
+        &:focus {
+            @extend .btn-gray;
+        }
+    }
+}
+
+.btn-error {
+    @extend .bg-error-500;
+    @extend .text-white;
+
+    &:hover,
+    &:focus {
+        @extend .bg-error-700;
+    }
+
+    &--outlined {
+        background: none;
+        border: 1px solid $error;
+        @extend .text-error;
+
+        &:hover,
+        &:focus {
+            @extend .btn-error;
+        }
+    }
+}

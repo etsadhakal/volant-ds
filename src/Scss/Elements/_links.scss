@@ -1,0 +1,6 @@
+a {
+  outline: 0;
+  @extend .text-primary;
+  @extend .decoration-none;
+  font-size: $baseFontSize;
+}
