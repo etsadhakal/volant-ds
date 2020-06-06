@@ -21,3 +21,9 @@
     @extend .text-info;
     @extend .bg-info-ternary;
 }
+
+.badge-error {
+    @extend .badge;
+    @extend .text-error;
+    @extend .bg-error-ternary;
+}

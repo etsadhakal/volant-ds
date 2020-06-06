@@ -7,7 +7,7 @@
     border: 1px solid transparent;
     cursor: pointer;
     @extend .text-capitalize;
-
+    @include border-radiusAround($radius-min);
 
     &--small {
         @extend .vds-btn;

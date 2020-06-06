@@ -1,0 +1,31 @@
+{
+  "name": "volant-ds",
+  "version": "1.0.0",
+  "description": "Volabt design system",
+  "main": "index.js",
+  "scripts": {
+    "dev:serve": "live-server",
+    "compile:sass": "node-sass src/dist/css/volant-design-system.scss  src/dist/css/volant-design-system.css -w",
+    "build": "npm-run-all --parallel dev:serve compile:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etsadhakal/volant-ds.git"
+  },
+  "keywords": [
+    "design",
+    "system"
+  ],
+  "author": "Ashish Dhakal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etsadhakal/volant-ds/issues"
+  },
+  "homepage": "https://github.com/etsadhakal/volant-ds#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "parallelshell": "^3.0.2"
+  }
+}

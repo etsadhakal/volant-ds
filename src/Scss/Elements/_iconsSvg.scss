@@ -1,8 +1,10 @@
 .vds-icon {
+
     svg {
         stroke-width: $icon-stroke;
         stroke-linecap: $icon-line;
         stroke-linejoin: $icon-line;
+        vertical-align: bottom;
     }
 }
 

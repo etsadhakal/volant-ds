@@ -6,6 +6,8 @@
     visibility: visible;
 }
 
+
+
 //padding
 .p-0 {
     padding: 0;
@@ -1733,4 +1735,14 @@
 
 .opacity-75 {
     opacity: 75%;
+}
+
+//code
+code {
+    @extend .bg-gray-800;
+    @extend .my-4;
+    @extend .p-3;
+    @include border-radiusAround($radius-min);
+    @extend .block;
+    @extend .text-white;
 }

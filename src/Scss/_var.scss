@@ -3,30 +3,29 @@
 $primary: #38b2ac;
 $white: #ffffff;
 $black: #333333;
-$warning: #ED8936;
-$info: #4299E1;
+$warning: #ed8936;
+$info: #4299e1;
 $gray: #76889f;
-$error: #CC2800;
+$error: #cc2800;
 $transparent: transparent;
-
 
 //font-styles
 $fontFamilyStyle: -apple-system,
 BlinkMacSystemFont,
-"Segoe UI",
+'Segoe UI',
 Roboto,
 Helvetica,
 Arial,
 sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol";
+'Apple Color Emoji',
+'Segoe UI Emoji',
+'Segoe UI Symbol';
 $baseFontSize: 1rem;
 $baseFontWeight: 400;
 $textColor: $black;
 
 //border-weight
-$bor-hairline : 0.5px;
+$bor-hairline: 0.5px;
 $bor-regular: 1px;
 $bor-bold: 2px;
 $bor-boldest: 2.5px;
@@ -35,6 +34,7 @@ $bor-boldest: 2.5px;
 $radius-none: 0px;
 $radius-small: 2px;
 $radius-min: 4px;
+$radius-huge: 15px;
 $radius-max: 999px;
 
 //shadow-spread
