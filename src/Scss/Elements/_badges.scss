@@ -1,0 +1,23 @@
+.badge {
+    font-size: $baseFontSize;
+    @extend .font-400;
+    @extend .bg-gray-100;
+    padding: 8px 16px;
+    @extend .text-gray;
+    @extend .bold-font;
+    @extend .inline--block;
+    border-radius: $radius-max;
+
+}
+
+.badge-primary {
+    @extend .badge;
+    @extend .text-primary;
+    @extend .bg-primary-ternary;
+}
+
+.badge-info {
+    @extend .badge;
+    @extend .text-info;
+    @extend .bg-info-ternary;
+}

@@ -1,0 +1,111 @@
+//input
+.vds-form {
+    margin: 0px 0px;
+    padding: 10px;
+
+    label {
+        font-size: $baseFontSize - 0.2rem;
+        @extend .inline--block;
+        @extend .text-gray;
+        vertical-align: middle;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=number] {
+        border-radius: $radius-min;
+        height: $default-inputSize;
+        font-size: $baseFontSize;
+        min-width: 360px;
+        margin: 5px 0px;
+        padding: 0px 20px;
+        @extend .border--gray-100;
+        outline: none;
+        @extend .block;
+        @extend .text-gray--700;
+
+        &:focus {
+            @extend .border;
+        }
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        @extend .border--gray-100;
+
+        &:before {
+            @extend .bg-primary-500;
+        }
+
+    }
+
+    textarea {
+        @extend input;
+        height: $default-inputSize * 2;
+        padding: 20px 20px;
+        font-family: $fontFamilyStyle;
+        font-size: $baseFontSize - 0.2rem;
+    }
+}
+
+//switch
+.toggle {
+    .switch {
+        @extend .position--relative;
+        @extend .inline--block;
+        width: 60px;
+        height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        @extend .opacity-0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @extend .bg-gray-100;
+        -webkit-transition: .4s;
+        transition: .4s;
+        @include border-radiusAround($radius-max);
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        @extend .bg-white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        @include border-radiusAround($radius-max);
+    }
+
+    input:checked+.slider {
+        @extend .bg-primary-500;
+    }
+
+    input:focus+.slider {
+        @extend .shadow--medium;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+}

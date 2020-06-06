@@ -1,0 +1,23 @@
+.avatar {
+    border-radius: $radius-max;
+    width: $default-avatarSize;
+    height: $default-avatarSize;
+}
+
+.avatar-sm {
+    @extend .avatar;
+    width: $default-avatarSize - 8px;
+    height: $default-avatarSize - 8px;
+}
+
+.avatar-xs {
+    @extend .avatar;
+    width: $default-avatarSize / 2;
+    height: $default-avatarSize / 2;
+}
+
+.avatar-lg {
+    @extend .avatar;
+    width: $default-avatarSize + 4px;
+    height: $default-avatarSize + 4px;
+}

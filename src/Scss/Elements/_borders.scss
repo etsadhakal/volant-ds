@@ -1,0 +1,192 @@
+//color
+.border {
+    @include borderAround;
+    border-color: $gray;
+
+    &--gray-100 {
+        @extend .border;
+        border-color: lighten($gray, 35%);
+    }
+
+    &--primary {
+        @extend .border;
+        border-color: $primary;
+    }
+
+    &--info {
+        @extend .border;
+        border-color: $info;
+    }
+
+    &--warning {
+        @extend .border;
+        border-color: $warning;
+    }
+
+    &--error {
+        @extend .border;
+        border-color: $error;
+    }
+
+    &--white {
+        @extend .border;
+        border-color: $white;
+    }
+
+    &--transparent {
+        @extend .border;
+        border-color: transparent;
+
+    }
+}
+
+.borderTop {
+    @include borderTop;
+    border-color: $gray;
+
+    &--primary {
+        @extend .borderTop;
+        border-color: $primary;
+    }
+
+    &--info {
+        @extend .borderTop;
+        border-color: $info;
+    }
+
+    &--warning {
+        @extend .borderTop;
+        border-color: $warning;
+    }
+
+    &--error {
+        @extend .borderTop;
+        border-color: $error;
+    }
+
+    &--white {
+        @extend .borderTop;
+        border-color: $white;
+    }
+
+    &--transparent {
+        @extend .borderTop;
+        border-color: transparent;
+
+    }
+}
+
+.borderBottom {
+    @include borderBottom;
+    border-color: $gray;
+
+    &--primary {
+        @extend .borderBottom;
+        border-color: $primary;
+    }
+
+    &--info {
+        @extend .borderBottom;
+        border-color: $info;
+    }
+
+    &--warning {
+        @extend .borderBottom;
+        border-color: $warning;
+    }
+
+    &--error {
+        @extend .borderBottom;
+        border-color: $error;
+    }
+
+    &--white {
+        @extend .borderBottom;
+        border-color: $white;
+    }
+
+    &--transparent {
+        @extend .borderBottom;
+        border-color: transparent;
+
+    }
+}
+
+.borderRight {
+    @include borderRight;
+    border-color: $gray;
+
+    &--primary {
+        @extend .borderRight;
+        border-color: $primary;
+    }
+
+    &--info {
+        @extend .borderRight;
+        border-color: $info;
+    }
+
+    &--warning {
+        @extend .borderRight;
+        border-color: $warning;
+    }
+
+    &--error {
+        @extend .borderRight;
+        border-color: $error;
+    }
+
+    &--white {
+        @extend .borderRight;
+        border-color: $white;
+    }
+
+    &--transparent {
+        @extend .borderRight;
+        border-color: transparent;
+
+    }
+}
+
+.borderLeft {
+    @include borderLeft;
+    border-color: $gray;
+
+    &--primary {
+        @extend .borderLeft;
+        border-color: $primary;
+    }
+
+    &--info {
+        @extend .borderLeft;
+        border-color: $info;
+    }
+
+    &--warning {
+        @extend .borderLeft;
+        border-color: $warning;
+    }
+
+    &--error {
+        @extend .borderLeft;
+        border-color: $error;
+    }
+
+    &--white {
+        @extend .borderLeft;
+        border-color: $white;
+    }
+
+    &--transparent {
+        @extend .borderLeft;
+        border-color: transparent;
+
+    }
+}
+
+//width
+
+
+.border-none {
+    border: none;
+}

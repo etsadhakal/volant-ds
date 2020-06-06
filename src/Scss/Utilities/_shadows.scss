@@ -1,0 +1,17 @@
+.shadow {
+    &--small {
+        @include shadowSmall;
+    }
+
+    &--medium {
+        @include shadowMedium;
+    }
+
+    &--large {
+        @include shadowLarge;
+    }
+
+    &--none {
+        box-shadow: none;
+    }
+}

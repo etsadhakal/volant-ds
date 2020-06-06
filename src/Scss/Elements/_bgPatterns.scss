@@ -1,45 +1,9 @@
 //background colors & shades pattern
 //-----------------------------------
-//primary light
-.bg-primary-ternary {
-    background: lighten($primary, 40%);
+//white
+.bg-white {
+    background: $white;
 }
-
-.bg-primary-100 {
-    background: lighten($primary, 35%);
-}
-
-.bg-primary-200 {
-    background: lighten($primary, 25%);
-}
-
-.bg-primary-300 {
-    background: lighten($primary, 10%);
-}
-
-.bg-primary-400 {
-    background: lighten($primary, 5%);
-}
-
-//primary
-.bg-primary-500 {
-    background: $primary;
-}
-
-//primary dark
-.bg-primary-600 {
-    background: darken($primary, 5%);
-}
-
-.bg-primary-700 {
-    background: darken($primary, 10%);
-}
-
-.bg-primary-800 {
-    background: darken($primary, 25%);
-}
-
-//-----------------------------------
 
 //gray light
 .bg-gray-ternary {
@@ -81,6 +45,49 @@
 }
 
 //-----------------------------------
+
+//primary light
+.bg-primary-ternary {
+    background: lighten($primary, 40%);
+}
+
+.bg-primary-100 {
+    background: lighten($primary, 35%);
+}
+
+.bg-primary-200 {
+    background: lighten($primary, 25%);
+}
+
+.bg-primary-300 {
+    background: lighten($primary, 10%);
+}
+
+.bg-primary-400 {
+    background: lighten($primary, 5%);
+}
+
+//primary
+.bg-primary-500 {
+    background: $primary;
+}
+
+//primary dark
+.bg-primary-600 {
+    background: darken($primary, 5%);
+}
+
+.bg-primary-700 {
+    background: darken($primary, 10%);
+}
+
+.bg-primary-800 {
+    background: darken($primary, 25%);
+}
+
+//-----------------------------------
+
+
 
 //info light
 .bg-info-ternary {

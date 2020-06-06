@@ -1,1 +1,49 @@
-//
+//display content
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.flow-root {
+    display: flow-root;
+}
+
+.inline {
+    display: inline;
+
+    &--block {
+        display: inline-block;
+    }
+
+    &--flex {
+        display: inline-flex;
+    }
+
+    &--grid {
+        display: inline-grid;
+    }
+
+}
+
+.table {
+    display: table;
+
+    &--caption {
+        display: table-caption;
+    }
+
+    &--cell {
+        display: table-cell;
+    }
+
+    &--column {
+        display: table-column;
+    }
+
+    &--row {
+        display: table-row;
+    }
+}

@@ -1,1 +1,55 @@
-@mixin borderAll {}
+@mixin borderAround {
+    border: $bor-regular solid;
+}
+
+@mixin borderTop {
+    border-top: $bor-regular solid;
+}
+
+@mixin borderBottom {
+    border-bottom: $bor-regular solid;
+}
+
+@mixin borderRight {
+    border-right: $bor-regular solid;
+}
+
+@mixin borderLeft {
+    border-left: $bor-regular solid;
+}
+
+//border-radius mixins
+@mixin border-radiusAround($radius-value) {
+    -webkit-border-radius: $radius-value;
+    -moz-border-radius: $radius-value;
+    -ms-border-radius: $radius-value;
+    border-radius: $radius-value;
+}
+
+@mixin border-radiusTopLeft($radius-value) {
+    -webkit-border-radius: $radius-value $radius-none $radius-none $radius-none;
+    -moz-border-radius: $radius-value $radius-none $radius-none $radius-none;
+    -ms-border-radius: $radius-value $radius-none $radius-none $radius-none;
+    border-radius: $radius-value $radius-none $radius-none $radius-none;
+}
+
+@mixin border-radiusTopRight($radius-value) {
+    -webkit-border-radius: $radius-none $radius-value $radius-none $radius-none;
+    -moz-border-radius: $radius-none $radius-value $radius-none $radius-none;
+    -ms-border-radius: $radius-none $radius-value $radius-none $radius-none;
+    border-radius: $radius-none $radius-value $radius-none $radius-none;
+}
+
+@mixin border-radiusBottomRight($radius-value) {
+    -webkit-border-radius: $radius-none $radius-none $radius-value $radius-none;
+    -moz-border-radius: $radius-none $radius-none $radius-value $radius-none;
+    -ms-border-radius: $radius-none $radius-none $radius-value $radius-none;
+    border-radius: $radius-none $radius-none $radius-value $radius-none;
+}
+
+@mixin border-radiusBottomLeft($radius-value) {
+    -webkit-border-radius: $radius-none $radius-none $radius-none $radius-value;
+    -moz-border-radius: $radius-none $radius-none $radius-none $radius-value;
+    -ms-border-radius: $radius-none $radius-none $radius-none $radius-value;
+    border-radius: $radius-none $radius-none $radius-none $radius-value;
+}

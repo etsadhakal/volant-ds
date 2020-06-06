@@ -24,3 +24,32 @@ sans-serif,
 $baseFontSize: 1rem;
 $baseFontWeight: 400;
 $textColor: $black;
+
+//border-weight
+$bor-hairline : 0.5px;
+$bor-regular: 1px;
+$bor-bold: 2px;
+$bor-boldest: 2.5px;
+
+//border-raidus
+$radius-none: 0px;
+$radius-small: 2px;
+$radius-min: 4px;
+$radius-max: 999px;
+
+//shadow-spread
+$shadow: 0.26;
+
+//container-length
+$default-container: 1240px;
+
+//avatar size
+$default-avatarSize: 32px;
+
+//icon-size
+$default-iconSize: 24px;
+$icon-stroke: 2px;
+$icon-line: round;
+
+//forms input
+$default-inputSize: 46px;

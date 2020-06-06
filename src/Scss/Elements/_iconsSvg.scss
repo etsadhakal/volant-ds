@@ -1,0 +1,58 @@
+.vds-icon {
+    svg {
+        stroke-width: $icon-stroke;
+        stroke-linecap: $icon-line;
+        stroke-linejoin: $icon-line;
+    }
+}
+
+.icon-md {
+    @extend .vds-icon;
+
+    svg {
+        width: $default-iconSize;
+        height: $default-iconSize;
+    }
+
+}
+
+.icon-sm {
+
+    @extend .vds-icon;
+
+    svg {
+        width: $default-iconSize - 4px;
+        height: $default-iconSize - 4px;
+    }
+
+}
+
+.icon-xs {
+
+    @extend .vds-icon;
+
+    svg {
+        width: $default-iconSize - 8px;
+        height: $default-iconSize - 8px;
+    }
+}
+
+.icon-lg {
+
+    @extend .vds-icon;
+
+    svg {
+        width: $default-iconSize+8px;
+        height: $default-iconSize+8px;
+    }
+}
+
+.icon-xl {
+
+    @extend .vds-icon;
+
+    svg {
+        width: $default-iconSize * 2;
+        height: $default-iconSize * 2;
+    }
+}
