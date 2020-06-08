@@ -1,6 +1,16 @@
 a {
   outline: 0;
-  @extend .text-primary;
+  @extend .text-gray--300;
   @extend .decoration-none;
   font-size: $baseFontSize;
+
+  &:hover {
+    @extend .text-primary--300;
+    ;
+  }
+}
+
+a.active {
+  @extend .text-primary;
+  @extend .bold-font--600;
 }

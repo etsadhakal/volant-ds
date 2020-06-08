@@ -1739,10 +1739,12 @@
 
 //code
 code {
-    @extend .bg-gray-800;
-    @extend .my-4;
-    @extend .p-3;
-    @include border-radiusAround($radius-min);
+    font-family: consolas;
+    @extend .bg-gray-100;
     @extend .block;
-    @extend .text-white;
+    @extend .mt-5;
+    @extend .p-5;
+    @extend .text-gray--700;
+    @include border-radiusAround($radius-min);
+    @extend .shadow--medium;
 }

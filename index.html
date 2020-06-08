@@ -13,6 +13,9 @@
       <div class="row center-xs middle-xs">
         <div class="col-xs-6">
           <div class="box">
+            <div class="version py-4">
+              <span class="badge">V 1.0.0</span>
+            </div>
             <img src="assets/svg/main-logo.svg" alt="" / style="width: auto;
             height: 200px;">
             <h4 class="text-capitalize py-4 light-font">
@@ -20,12 +23,17 @@
             </h4>
             <div class="button-wrapper pt-6 inline--flex">
               <div class="button-get-satrted mx-4">
-                <a href="" class="vds-btn--large btn-primary icon-sm"
+                <a
+                  href="get-started.html"
+                  class="vds-btn--large btn-primary icon-sm"
                   >Get Started <i data-feather="arrow-right"></i
                 ></a>
               </div>
               <div class="button-github mx-4">
-                <a href="" class="vds-btn--large btn-gray--outlined icon-sm">
+                <a
+                  href="https://github.com/etsadhakal/volant-ds"
+                  class="vds-btn--large btn-gray--outlined icon-sm"
+                >
                   <i data-feather="github"></i> View On Github</a
                 >
               </div>
@@ -38,9 +46,6 @@
       <div class="container">
         <div class="row start-xs">
           <div class="col-xs-offset-2 col-xs-8">
-            <div class="version pb-4">
-              <span class="badge">V 1.0.0</span>
-            </div>
             <div class="heading">
               <h3 class="bold-font">Setup Installation</h3>
               <p class="light-font--400">
@@ -50,21 +55,67 @@
             </div>
             <div class="step-1 mt-10 bg-white p-5">
               <div class="heading">
-                <h5 class="bold-font text-gray">
+                <h5 class="bold-font">
                   Step 1 : Clone from repository
                 </h5>
+                <p class="text-gray--600">
+                  Copy below line of code and paste on your command line
+                </p>
                 <code>
                   $git clone https://github.com/etsadhakal/volant-ds.git
                 </code>
+              </div>
+            </div>
+            <div class="step-2 mt-10 bg-white p-5">
+              <div class="heading">
+                <h5 class="bold-font">
+                  Step 2 : Go to project
+                </h5>
+                <p class="text-gray--600">
+                  Go to your cloned directory
+                </p>
+                <code>
+                  $cd volant-design-system
+                </code>
+              </div>
+            </div>
+            <div class="step-3 mt-10 bg-white p-5">
+              <div class="heading">
+                <h5 class="bold-font">
+                  Step 3 : Run Npm Command
+                </h5>
+                <p class="text-gray--600">
+                  In order to run this command you need to have
+                  <a
+                    href="https://nodejs.org/en/docs/"
+                    class="link active"
+                    target="_blank"
+                    >Node.js</a
+                  >
+                  with higher than version Node.js 8.x
+                </p>
+                <code>
+                  npm install
+                </code>
+                <p class="text-gray--600">
+                  By installing this will install the necessary dependencies for
+                  to run the design system
+                </p>
+                <code>
+                  npm run build
+                </code>
+                <p class="text-gray--600">
+                  Use this command line and you see the build will be prepared.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace();
-    </script>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace();
+  </script>
 </html>

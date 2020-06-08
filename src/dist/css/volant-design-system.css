@@ -780,20 +780,26 @@
   position: relative; }
 
 .position--fixed {
-  position: fixed; }
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100; }
 
 .position--absolute {
   position: absolute; }
 
 .position--sticky {
-  position: sticky; }
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 0;
+  width: auto; }
 
 .shadow--small {
   -webkit-box-shadow: 0px -1px 17px -5px rgba(176, 176, 176, 0.26);
   -moz-box-shadow: 0px -1px 17px -5px rgba(176, 176, 176, 0.26);
   box-shadow: 0px -1px 17px -5px rgba(176, 176, 176, 0.26); }
 
-.shadow--medium, .toggle input:focus + .slider, .toggle .vds-form textarea:focus + .slider, .vds-form .toggle textarea:focus + .slider {
+.shadow--medium, code, .toggle input:focus + .slider, .toggle .vds-form textarea:focus + .slider, .vds-form .toggle textarea:focus + .slider {
   -webkit-box-shadow: -1px 4px 46px 3px rgba(176, 176, 176, 0.26);
   -moz-box-shadow: -1px 4px 46px 3px rgba(176, 176, 176, 0.26);
   box-shadow: -1px 4px 46px 3px rgba(176, 176, 176, 0.26); }
@@ -821,16 +827,16 @@
 .p-2 {
   padding: 0.5rem; }
 
-.p-3, code {
+.p-3 {
   padding: 0; }
 
 .p-4 {
   padding: 1rem; }
 
-.p-5 {
+.p-5, code {
   padding: 1.25rem; }
 
-.p-5 {
+.p-5, code {
   padding: 1.5rem; }
 
 .p-8 {
@@ -1379,7 +1385,7 @@
   margin-top: 0.75rem;
   margin-bottom: 0.75rem; }
 
-.my-4, code {
+.my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
@@ -1682,7 +1688,7 @@
 .mt-4 {
   margin-top: 1rem; }
 
-.mt-5 {
+.mt-5, code {
   margin-top: 1.25rem; }
 
 .mt-6 {
@@ -2136,6 +2142,7 @@
   opacity: 75%; }
 
 code {
+  font-family: consolas;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -2147,7 +2154,7 @@ code {
 .bg-gray-ternary, body {
   background: #eef0f3; }
 
-.bg-gray-100, .badge, .badge-primary, .badge-info, .badge-error, .toggle .slider {
+.bg-gray-100, code, .badge, .badge-primary, .badge-info, .badge-error, .toggle .slider {
   background: #dfe3e9; }
 
 .bg-gray-200 {
@@ -2168,7 +2175,7 @@ code {
 .bg-gray-700, .btn-gray:hover, .btn-gray--outlined:hover, .btn-gray:focus, .btn-gray--outlined:focus {
   background: #5d6f85; }
 
-.bg-gray-800, code {
+.bg-gray-800 {
   background: #29303a; }
 
 .bg-primary-ternary, .badge-primary {
@@ -2352,7 +2359,7 @@ h1 {
 .font-500, .bold-font, .badge, .badge-primary, .badge-info, .badge-error {
   font-weight: 500; }
 
-.font-600, .bold-font--600 {
+.font-600, .bold-font--600, a.active {
   font-weight: 600; }
 
 .font-700, .bold-font--700, h6,
@@ -2363,30 +2370,30 @@ h2,
 h1 {
   font-weight: 700; }
 
-.text-white, code, .btn-primary, .btn-primary--outlined:hover, .btn-primary--outlined:focus, .btn-info, .btn-info--outlined:hover, .btn-info--outlined:focus, .btn-warning, .btn-warning--outlined:hover, .btn-warning--outlined:focus, .btn-gray, .btn-gray--outlined:hover, .btn-gray--outlined:focus, .btn-error, .btn-error--outlined:hover, .btn-error--outlined:focus {
+.text-white, .btn-primary, .btn-primary--outlined:hover, .btn-primary--outlined:focus, .btn-info, .btn-info--outlined:hover, .btn-info--outlined:focus, .btn-warning, .btn-warning--outlined:hover, .btn-warning--outlined:focus, .btn-gray, .btn-gray--outlined:hover, .btn-gray--outlined:focus, .btn-error, .btn-error--outlined:hover, .btn-error--outlined:focus {
   color: #ffffff; }
 
 .text-gray, .btn-gray--outlined, .badge, .badge-primary, .badge-info, .badge-error, .vds-form label {
   color: #76889f; }
   .text-gray--400 {
     color: #8595aa; }
-  .text-gray--300 {
+  .text-gray--300, a {
     color: #94a2b4; }
   .text-gray--200 {
     color: #c1c9d4; }
   .text-gray--600 {
     color: #687b94; }
-  .text-gray--700, .vds-form input[type=text], .vds-form textarea[type=text],
+  .text-gray--700, code, .vds-form input[type=text], .vds-form textarea[type=text],
   .vds-form input[type=password], .vds-form textarea[type=password],
   .vds-form input[type=email], .vds-form textarea[type=email],
   .vds-form input[type=number], .vds-form textarea[type=number] {
     color: #5d6f85; }
 
-.text-primary, a, .btn-primary--outlined, .badge-primary {
+.text-primary, a.active, .btn-primary--outlined, .badge-primary {
   color: #38b2ac; }
   .text-primary--400 {
     color: #40c3bd; }
-  .text-primary--300 {
+  .text-primary--300, a:hover {
     color: #54c9c3; }
   .text-primary--200 {
     color: #8edbd8; }
@@ -2481,6 +2488,9 @@ h1 {
 
 .text-center {
   text-align: center; }
+
+.text-justify {
+  text-align: justify; }
 
 .border, .border--gray-100, .vds-form input[type=text], .vds-form textarea[type=text],
 .vds-form input[type=password], .vds-form textarea[type=password],
@@ -2625,20 +2635,20 @@ a {
 
 .avatar, .avatar-sm, .avatar-xs, .avatar-lg {
   border-radius: 999px;
-  width: 32px;
-  height: 32px; }
+  width: 46px;
+  height: 46px; }
 
 .avatar-sm {
-  width: 24px;
-  height: 24px; }
+  width: 38px;
+  height: 38px; }
 
 .avatar-xs {
-  width: 16px;
-  height: 16px; }
+  width: 23px;
+  height: 23px; }
 
 .avatar-lg {
-  width: 36px;
-  height: 36px; }
+  width: 50px;
+  height: 50px; }
 
 .badge, .badge-primary, .badge-info, .badge-error {
   font-size: 1rem;
@@ -2747,7 +2757,7 @@ a {
 .bg-gray-ternary, body {
   background: #eef0f3; }
 
-.bg-gray-100, .badge, .badge-primary, .badge-info, .badge-error, .toggle .slider {
+.bg-gray-100, code, .badge, .badge-primary, .badge-info, .badge-error, .toggle .slider {
   background: #dfe3e9; }
 
 .bg-gray-200 {
@@ -2768,7 +2778,7 @@ a {
 .bg-gray-700, .btn-gray:hover, .btn-gray--outlined:hover, .btn-gray:focus, .btn-gray--outlined:focus {
   background: #5d6f85; }
 
-.bg-gray-800, code {
+.bg-gray-800 {
   background: #29303a; }
 
 .bg-primary-ternary, .badge-primary {
@@ -2914,3 +2924,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400; }
+
+html {
+  scroll-behavior: smooth; }
