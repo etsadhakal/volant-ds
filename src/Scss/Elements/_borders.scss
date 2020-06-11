@@ -74,6 +74,11 @@
         border-color: transparent;
 
     }
+
+    &--gray-100 {
+        @extend .border;
+        border-color: lighten($gray, 35%);
+    }
 }
 
 .borderBottom {
@@ -109,6 +114,11 @@
         @extend .borderBottom;
         border-color: transparent;
 
+    }
+
+    &--gray-100 {
+        @extend .borderBottom;
+        border-color: lighten($gray, 35%);
     }
 }
 
@@ -146,6 +156,11 @@
         border-color: transparent;
 
     }
+
+    &--gray-100 {
+        @extend .border;
+        border-color: lighten($gray, 35%);
+    }
 }
 
 .borderLeft {
@@ -181,6 +196,11 @@
         @extend .borderLeft;
         border-color: transparent;
 
+    }
+
+    &--gray-100 {
+        @extend .border;
+        border-color: lighten($gray, 35%);
     }
 }
 

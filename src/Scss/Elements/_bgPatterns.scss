@@ -5,6 +5,10 @@
     background: $white;
 }
 
+.bg-black {
+    background: $black;
+}
+
 //gray light
 .bg-gray-ternary {
     background: lighten($gray, 40%);

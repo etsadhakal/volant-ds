@@ -41,6 +41,7 @@
     &:hover,
     &:focus {
         @extend .bg-primary-700;
+        @extend .text-white;
     }
 
     &--outlined {
