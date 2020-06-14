@@ -2600,6 +2600,15 @@ h1 {
 .border-none {
   border: none; }
 
+.width-thin {
+  border-width: 0.5px; }
+
+.width-bold {
+  border-width: 2px; }
+
+.width-extra {
+  border-width: 2.5px; }
+
 a {
   outline: 0;
   font-size: 1rem; }
@@ -2650,7 +2659,8 @@ a {
 .avatar, .avatar-sm, .avatar-xs, .avatar-lg {
   border-radius: 999px;
   width: 46px;
-  height: 46px; }
+  height: 46px;
+  object-fit: cover; }
 
 .avatar-sm {
   width: 38px;
@@ -2661,8 +2671,8 @@ a {
   height: 23px; }
 
 .avatar-lg {
-  width: 50px;
-  height: 50px; }
+  width: 54px;
+  height: 54px; }
 
 .badge, .badge-primary, .badge-info, .badge-error {
   font-size: 1rem;

@@ -210,3 +210,15 @@
 .border-none {
     border: none;
 }
+
+.width-thin {
+    border-width: $bor-hairline;
+}
+
+.width-bold {
+    border-width: $bor-bold;
+}
+
+.width-extra {
+    border-width: $bor-boldest;
+}

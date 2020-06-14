@@ -2,6 +2,7 @@
     border-radius: $radius-max;
     width: $default-avatarSize;
     height: $default-avatarSize;
+    object-fit: cover;
 }
 
 .avatar-sm {
@@ -18,6 +19,6 @@
 
 .avatar-lg {
     @extend .avatar;
-    width: $default-avatarSize + 4px;
-    height: $default-avatarSize + 4px;
+    width: $default-avatarSize + 8px;
+    height: $default-avatarSize + 8px;
 }
