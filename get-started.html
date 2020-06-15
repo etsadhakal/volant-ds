@@ -1488,7 +1488,8 @@
                     <div class="content-heading">
                       <h3 class="text-gray--700">Tables</h3>
                       <p class="py-3 lineHeight-150 text-justify">
-                        Use this below code to view the forms elements design
+                        Use this below code to view the UI table component
+                        design
                       </p>
                     </div>
                     <p class="mt-10 mb-5 bold-font--700">Table</p>
@@ -1635,16 +1636,176 @@
                     </div>
                   </div>
                 </section>
+                <section class="py-8" id="alerts">
+                  <div class="content-block">
+                    <div class="content-heading">
+                      <h3 class="text-gray--700">Alerts</h3>
+                      <p class="py-3 lineHeight-150 text-justify">
+                        Use this below code to view the UI Alerts component
+                        design
+                      </p>
+                    </div>
+                    <div class="alert-block mt-5">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="alert-wrapper my-5">
+                            <div class="alert">
+                              <span
+                                class="closebtn"
+                                onclick="this.parentElement.style.display='none';"
+                                >&times;</span
+                              >
+                              <p class="alert-head">Default Alert</p>
+                              <p class="alert-text">
+                                This is the dismisable alert box for our content
+                                of alert
+                              </p>
+                            </div>
+                          </div>
+                          <div class="alert-wrapper my-5">
+                            <div class="alert--success">
+                              <span
+                                class="closebtn"
+                                onclick="this.parentElement.style.display='none';"
+                                >&times;</span
+                              >
+                              <p class="alert-head">Succcess Alert</p>
+                              <p class="alert-text">
+                                This is the dismisable alert box for our content
+                                of alert
+                              </p>
+                            </div>
+                          </div>
+                          <div class="alert-wrapper my-5">
+                            <div class="alert--info">
+                              <span
+                                class="closebtn"
+                                onclick="this.parentElement.style.display='none';"
+                                >&times;</span
+                              >
+                              <p class="alert-head">Info Alert</p>
+                              <p class="alert-text">
+                                This is the dismisable alert box for our content
+                                of alert
+                              </p>
+                            </div>
+                          </div>
+                          <div class="alert-wrapper my-5">
+                            <div class="alert--warning">
+                              <span
+                                class="closebtn"
+                                onclick="this.parentElement.style.display='none';"
+                                >&times;</span
+                              >
+                              <p class="alert-head">Warning Alert</p>
+                              <p class="alert-text">
+                                This is the dismisable alert box for our content
+                                of alert
+                              </p>
+                            </div>
+                          </div>
+                          <div class="alert-wrapper my-5">
+                            <div class="alert--error">
+                              <span
+                                class="closebtn"
+                                onclick="this.parentElement.style.display='none';"
+                                >&times;</span
+                              >
+                              <p class="alert-head">Error Alert</p>
+                              <p class="alert-text">
+                                This is the dismisable alert box for our content
+                                of alert
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="py-8" id="modals">
+                  <div class="content-block">
+                    <div class="content-heading">
+                      <h3 class="text-gray--700">Modals</h3>
+                      <p class="py-3 lineHeight-150 text-justify">
+                        Click the button down below to view the modal dialog
+                      </p>
+                    </div>
+                    <div class="modal-block mt-5">
+                      <div class="row">
+                        <div class="col-xs-3">
+                          <button
+                            class="vds-btn btn-gray text-lowercase modal-trigger"
+                            data-modal-id="modalsm"
+                          >
+                            .modal-sm
+                          </button>
+                        </div>
+                        <div class="col-xs-3">
+                          <button
+                            class="vds-btn btn-gray text-lowercase modal-trigger"
+                            data-modal-id="modalmd"
+                          >
+                            .modal-md
+                          </button>
+                        </div>
+                        <div class="col-xs-3">
+                          <button
+                            class="vds-btn btn-gray text-lowercase modal-trigger"
+                            data-modal-id="modallg"
+                          >
+                            .modal-lg
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <style></style>
+    <div class="modal-wrapper">
+      <section class="modal-window modal-sm" id="modalsm">
+        <header class="modal-header">
+          <h4>Title goes here...</h4>
+          <a href="" class="close-modal-button">
+            <span><i data-feather="x"></i></span>
+          </a>
+        </header>
+        <div class="modal-body">
+          <p>Congrats, you've opened a small modal!</p>
+        </div>
+      </section>
+      <section class="modal-window modal-md" id="modalmd">
+        <header class="modal-header">
+          <h4>Title goes here...</h4>
+          <a href="" class="close-modal-button">
+            <span><i data-feather="x"></i></span>
+          </a>
+        </header>
+        <div class="modal-body">
+          <p>Congrats, you've opened a medium modal!</p>
+        </div>
+      </section>
+      <section class="modal-window modal-lg" id="modallg">
+        <header class="modal-header">
+          <h4>Title goes here...</h4>
+          <a href="" class="close-modal-button">
+            <span><i data-feather="x"></i></span>
+          </a>
+        </header>
+        <div class="modal-body">
+          <p>Congrats, you've opened a large modal!</p>
+        </div>
+      </section>
+    </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <script>
     feather.replace();
   </script>
+  <script src="./src/js/modal.js"></script>
 </html>

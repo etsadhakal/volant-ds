@@ -1,0 +1,84 @@
+.alert {
+    @extend .py-4;
+    @extend .px-6;
+    @include border-radiusAround($radius-min);
+    @extend .border--gray-100;
+    @extend .bg-gray-ternary;
+
+    .closebtn {
+        float: right;
+        font-size: 22px;
+        @extend .text-gray--300;
+        @extend .bold-font;
+        cursor: pointer;
+    }
+
+    .alert-head {
+        @extend .text-gray;
+        @extend .bold-font--600;
+    }
+
+    .alert-text {
+        @extend .text-gray;
+    }
+
+    &--success {
+        @extend .alert;
+        @extend .border--primary;
+        @extend .bg-primary-ternary;
+
+        .closebtn {
+            @extend .text-primary--600;
+        }
+
+        .alert-head,
+        .alert-text {
+            @extend .text-primary;
+        }
+    }
+
+    &--info {
+        @extend .alert;
+        @extend .border--info;
+        @extend .bg-info-ternary;
+
+        .closebtn {
+            @extend .text-info--600;
+        }
+
+        .alert-head,
+        .alert-text {
+            @extend .text-info;
+        }
+    }
+
+    &--warning {
+        @extend .alert;
+        @extend .border--warning;
+        @extend .bg-warning-ternary;
+
+        .closebtn {
+            @extend .text-warning--600;
+        }
+
+        .alert-head,
+        .alert-text {
+            @extend .text-warning;
+        }
+    }
+
+    &--error {
+        @extend .alert;
+        @extend .border--error;
+        @extend .bg-error-ternary;
+
+        .closebtn {
+            @extend .text-error--600;
+        }
+
+        .alert-head,
+        .alert-text {
+            @extend .text-error;
+        }
+    }
+}
