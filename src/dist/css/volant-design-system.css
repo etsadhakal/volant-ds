@@ -891,11 +891,11 @@
   padding-top: 0.75rem;
   padding-bottom: 0.75rem; }
 
-.py-4 {
+.py-4, table tbody tr td {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
-.py-5 {
+.py-5, table tbody tr th {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem; }
 
@@ -959,7 +959,7 @@
   padding-right: 0.25rem;
   padding-left: 0.25rem; }
 
-.px-2 {
+.px-2, table tbody tr th {
   padding-right: 0.5rem;
   padding-left: 0.5rem; }
 
@@ -967,7 +967,7 @@
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
-.px-4 {
+.px-4, table tbody tr td {
   padding-right: 1rem;
   padding-left: 1rem; }
 
@@ -1793,7 +1793,7 @@
 .mr-1 {
   margin-right: 0.25rem; }
 
-.mr-2 {
+.mr-2, table tbody tr td img {
   margin-right: 0.5rem; }
 
 .mr-3 {
@@ -2147,14 +2147,16 @@ code {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px; }
+  code xmp {
+    font-size: 1rem; }
 
-.bg-white, .toggle .slider:before {
+.bg-white, .toggle .slider:before, table {
   background: #ffffff; }
 
 .bg-black {
   background: #333333; }
 
-.bg-gray-ternary, body {
+.bg-gray-ternary, body, .striped tr:nth-child(even) {
   background: #eef0f3; }
 
 .bg-gray-100, code, .badge, .badge-primary, .badge-info, .badge-error, .toggle .slider {
@@ -2362,7 +2364,7 @@ h1 {
 .font-400, p, .badge, .badge-primary, .badge-info, .badge-error {
   font-weight: 400; }
 
-.font-500, .bold-font, .badge, .badge-primary, .badge-info, .badge-error {
+.font-500, .bold-font, .badge, .badge-primary, .badge-info, .badge-error, table tbody tr th {
   font-weight: 500; }
 
 .font-600, .bold-font--600, a.active {
@@ -2379,17 +2381,20 @@ h1 {
 .text-white, .btn-primary, .btn-primary--outlined:hover, .btn-primary--outlined:focus, .btn-primary:hover, .btn-primary:focus, .btn-info, .btn-info--outlined:hover, .btn-info--outlined:focus, .btn-warning, .btn-warning--outlined:hover, .btn-warning--outlined:focus, .btn-gray, .btn-gray--outlined:hover, .btn-gray--outlined:focus, .btn-error, .btn-error--outlined:hover, .btn-error--outlined:focus {
   color: #ffffff; }
 
-.text-gray, .btn-gray--outlined, .badge, .badge-primary, .badge-info, .badge-error, .vds-form label {
+.text-gray, .btn-gray--outlined, .badge, .badge-primary, .badge-info, .badge-error, .vds-form label, table tbody tr th {
   color: #76889f; }
   .text-gray--400 {
     color: #8595aa; }
   .text-gray--300, a {
     color: #94a2b4; }
-  .text-gray--200 {
+  .text-gray--200, .vds-form input[type=text]::placeholder, .vds-form textarea[type=text]::placeholder,
+  .vds-form input[type=password]::placeholder, .vds-form textarea[type=password]::placeholder,
+  .vds-form input[type=email]::placeholder, .vds-form textarea[type=email]::placeholder,
+  .vds-form input[type=number]::placeholder, .vds-form textarea[type=number]::placeholder {
     color: #c1c9d4; }
   .text-gray--600 {
     color: #687b94; }
-  .text-gray--700, code, .vds-form input[type=text], .vds-form textarea[type=text],
+  .text-gray--700, code, code xmp, .vds-form input[type=text], .vds-form textarea[type=text],
   .vds-form input[type=password], .vds-form textarea[type=password],
   .vds-form input[type=email], .vds-form textarea[type=email],
   .vds-form input[type=number], .vds-form textarea[type=number] {
@@ -2474,7 +2479,7 @@ h1 {
 .underlined {
   text-decoration: underline; }
 
-.text-uppercase {
+.text-uppercase, table tbody tr th {
   text-transform: uppercase; }
 
 .text-capitalize, .vds-btn, .vds-btn--small, .vds-btn--large, .vds-btn--Xlarge {
@@ -2486,11 +2491,11 @@ h1 {
 .text-none {
   text-transform: none; }
 
+.text-left, table tbody tr th {
+  text-align: left; }
+
 .text-right {
   text-align: right; }
-
-.text-left {
-  text-align: left; }
 
 .text-center {
   text-align: center; }
@@ -2501,7 +2506,7 @@ h1 {
 .border, .border--gray-100, .vds-form input[type=text], .vds-form textarea[type=text],
 .vds-form input[type=password], .vds-form textarea[type=password],
 .vds-form input[type=email], .vds-form textarea[type=email],
-.vds-form input[type=number], .vds-form textarea[type=number], .vds-form input[type="checkbox"], .vds-form textarea[type="checkbox"], .border--primary, .border--info, .border--warning, .border--error, .border--white, .border--transparent, .borderTop--gray-100, .borderRight--gray-100, .borderLeft--gray-100, .vds-form input[type=text]:focus, .vds-form textarea[type=text]:focus,
+.vds-form input[type=number], .vds-form textarea[type=number], .vds-form input[type="checkbox"], .vds-form textarea[type="checkbox"], .border--primary, .border--info, .border--warning, .border--error, .border--white, .border--transparent, .borderRight--gray-100, .borderLeft--gray-100, .vds-form input[type=text]:focus, .vds-form textarea[type=text]:focus,
 .vds-form input[type=password]:focus, .vds-form textarea[type=password]:focus,
 .vds-form input[type=email]:focus, .vds-form textarea[type=email]:focus,
 .vds-form input[type=number]:focus, .vds-form textarea[type=number]:focus {
@@ -2525,7 +2530,7 @@ h1 {
   .border--transparent {
     border-color: transparent; }
 
-.borderTop, .borderTop--primary, .borderTop--info, .borderTop--warning, .borderTop--error, .borderTop--white, .borderTop--transparent {
+.borderTop, .borderTop--primary, .borderTop--info, .borderTop--warning, .borderTop--error, .borderTop--white, .borderTop--transparent, .borderTop--gray-100, table tbody tr td {
   border-top: 1px solid;
   border-color: #76889f; }
   .borderTop--primary {
@@ -2540,7 +2545,7 @@ h1 {
     border-color: #ffffff; }
   .borderTop--transparent {
     border-color: transparent; }
-  .borderTop--gray-100 {
+  .borderTop--gray-100, table tbody tr td {
     border-color: #dfe3e9; }
 
 .borderBottom, .borderBottom--primary, .borderBottom--info, .borderBottom--warning, .borderBottom--error, .borderBottom--white, .borderBottom--transparent, .borderBottom--gray-100 {
@@ -2597,7 +2602,7 @@ h1 {
   .borderLeft--gray-100 {
     border-color: #dfe3e9; }
 
-.border-none {
+.border-none, table tbody tr th, .striped td {
   border: none; }
 
 .width-thin {
@@ -2656,13 +2661,13 @@ a {
   background: none;
   border: 1px solid #df391b; }
 
-.avatar, .avatar-sm, .avatar-xs, .avatar-lg {
+.avatar, .avatar-sm, table tbody tr td img, .avatar-xs, .avatar-lg {
   border-radius: 999px;
   width: 46px;
   height: 46px;
   object-fit: cover; }
 
-.avatar-sm {
+.avatar-sm, table tbody tr td img {
   width: 38px;
   height: 38px; }
 
@@ -2775,13 +2780,13 @@ a {
     -ms-transform: translateX(26px);
     transform: translateX(26px); }
 
-.bg-white, .toggle .slider:before {
+.bg-white, .toggle .slider:before, table {
   background: #ffffff; }
 
 .bg-black {
   background: #333333; }
 
-.bg-gray-ternary, body {
+.bg-gray-ternary, body, .striped tr:nth-child(even) {
   background: #eef0f3; }
 
 .bg-gray-100, code, .badge, .badge-primary, .badge-info, .badge-error, .toggle .slider {
@@ -2954,3 +2959,14 @@ body {
 
 html {
   scroll-behavior: smooth; }
+
+table {
+  width: 100%;
+  border-collapse: collapse; }
+  table tbody tr th {
+    font-size: 0.8rem; }
+  table tbody tr td {
+    vertical-align: middle;
+    line-height: 0; }
+    table tbody tr td img {
+      vertical-align: middle; }

@@ -28,6 +28,10 @@
         &:focus {
             @extend .border;
         }
+
+        &::placeholder {
+            @extend .text-gray--200;
+        }
     }
 
     input[type="checkbox"] {

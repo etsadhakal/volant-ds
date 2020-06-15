@@ -1,0 +1,48 @@
+table {
+    width: 100%;
+    @extend .bg-white;
+    border-collapse: collapse;
+
+    tbody {
+        tr {
+            th {
+                @extend .text-left;
+                @extend .bold-font;
+                @extend .text-uppercase;
+                @extend .text-gray;
+                @extend .py-5;
+                @extend .px-2;
+                @extend .border-none;
+                font-size: $baseFontSize - 0.2rem;
+
+
+            }
+
+            td {
+                @extend .borderTop--gray-100;
+                @extend .py-4;
+                @extend .px-4;
+                vertical-align: middle;
+                line-height: 0;
+
+                img {
+                    vertical-align: middle;
+                    @extend .avatar-sm;
+                    @extend .mr-2;
+                }
+            }
+
+        }
+    }
+}
+
+.striped {
+    tr:nth-child(even) {
+        @extend .bg-gray-ternary;
+
+    }
+
+    td {
+        @extend .border-none;
+    }
+}

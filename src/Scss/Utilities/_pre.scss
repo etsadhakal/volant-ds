@@ -1747,4 +1747,8 @@ code {
     @extend .text-gray--700;
     @include border-radiusAround($radius-min);
     @extend .shadow--medium;
+    xmp{
+       @extend .text-gray--700;
+       font-size: $baseFontSize;
+    }
 }
