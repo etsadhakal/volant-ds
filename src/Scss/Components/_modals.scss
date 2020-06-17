@@ -56,13 +56,13 @@
 }
 
 .modal-sm {
-    width: 30vw;
+    width: $modal-deault;
 }
 
 .modal-md {
-    width: 50vw;
+    width: $modal-deault + 20vw;
 }
 
 .modal-lg {
-    width: 80vw;
+    width: $modal-deault + 50vw;
 }
